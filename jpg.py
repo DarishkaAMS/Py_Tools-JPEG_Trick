@@ -7,3 +7,4 @@ with open('cat_in_cup.jpg', 'rb') as image:
     offset = content.index(bytes.fromhex('FFD9'))
     image.seek(offset + 2)
     print(image.read())
+
